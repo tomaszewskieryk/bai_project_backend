@@ -40,4 +40,9 @@ public class TestController {
     public String testUnauthorizedEndpoint() {
         return testRepository.getTest();
     }
+
+    @GetMapping()
+    public String helloWorld() {
+        return "Hello world!";
+    }
 }
